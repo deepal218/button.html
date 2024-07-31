@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="checkCredentials()">Login</button>
+    <script>
+        function checkCredentials() {
+            const username = prompt("Please enter your username:");
+            const password = prompt("Please enter your password:");
+            if (username === 'ranadeepali' && password === '123') {
+                window.location.href = 'page3.html';
+            } else {
+                alert("Wrong credentials");
+            }
+        }
+    </script>
+</body>
+</html>
